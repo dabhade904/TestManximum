@@ -14,6 +14,9 @@ namespace FindMaximum
             Console.WriteLine("welcome");
             int intVal = obj.MaxVal(10, 20, 30);
             Console.WriteLine("bigest number is :" + intVal);
+
+            float res = obj.floatMax(10.00f, 2.0f, 9.0f);
+            Console.WriteLine("float value " + res);
         }
     }
 }
