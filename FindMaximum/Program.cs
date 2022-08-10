@@ -17,6 +17,9 @@ namespace FindMaximum
 
             float res = obj.floatMax(10.00f, 2.0f, 9.0f);
             Console.WriteLine("float value " + res);
+
+            string str = obj.GetMaxString("sachin", "kamlesh", "harsh");
+            Console.WriteLine("Max string is : " + str);
         }
     }
 }
