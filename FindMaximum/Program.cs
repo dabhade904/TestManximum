@@ -10,7 +10,10 @@ namespace FindMaximum
     {
         static void Main(string[] args)
         {
+            TestMax obj = new TestMax();
             Console.WriteLine("welcome");
+            int intVal = obj.MaxVal(10, 20, 30);
+            Console.WriteLine("bigest number is :" + intVal);
         }
     }
 }
