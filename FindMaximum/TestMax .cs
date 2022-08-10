@@ -22,5 +22,32 @@ namespace FindMaximum
             return bigNo;
         }
 
+        public float floatMax(float firstNumber, float secondNumber, float thirdNumber)
+        {
+            float longest = firstNumber;
+            if (secondNumber > longest)
+            {
+                longest = secondNumber;
+            }
+            else if (thirdNumber > longest)
+            {
+                longest = thirdNumber;
+            }
+            return longest;
+        }
+
+        public string GetMaxString(string first, string second, string third)
+        {
+            string str = first;
+            if (second.Length > str.Length)
+            {
+                 str=second;
+            }
+            else if(third.Length>str.Length)
+            {
+                str = third;
+            }
+            return str;
+        }
     }
 }
