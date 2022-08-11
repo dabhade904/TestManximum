@@ -10,16 +10,18 @@ namespace FindMaximum
     {
         static void Main(string[] args)
         {
-            TestMax obj = new TestMax();
-            Console.WriteLine("welcome");
-            int intVal = obj.MaxVal(10, 20, 30);
-            Console.WriteLine("bigest number is :" + intVal);
+            int [] intArray = { 112, 456, 2443, 557, 8, 345 };
+            TestMax<int> genric = new TestMax<int>(intArray);
+            genric.printValue();
 
-            float res = obj.floatMax(10.00f, 2.0f, 9.0f);
-            Console.WriteLine("float value " + res);
+            double[] doubleArray = { 12.00f, 45.6f, 24.43f, 5.0f, 8f, 3.0f };
+            TestMax<double> doubleGenric = new TestMax<double>(doubleArray);
+            doubleGenric.printValue();
 
-            string str = obj.GetMaxString("sachin", "kamlesh", "harsh");
-            Console.WriteLine("Max string is : " + str);
+            string[] stringArray = { "123", "34", "33", "43", "2", "111" };
+            TestMax<string> stringGeneric = new TestMax<string>(stringArray);
+            stringGeneric.printValue();
         }
+
     }
 }
